@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/jpg"
+      sizes="107x107"
+      href="images/TechTeamArrow.jpg"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- ArcGIS API -->
+    <link rel="stylesheet" href="https://js.arcgis.com/4.25/esri/themes/light/main.css">
+    <script src="https://js.arcgis.com/4.25/"></script>
+    <script type="module" src="map.js"></script>
+    <title>Ideathon 2023</title>
+    <!-- Fonts -->
+    <style>
+      @font-face {
+        font-family: Proxima-Nova;
+        src: url("./fonts/Proxima-Nova-Font.otf");
+      }
+      @font-face {
+        font-family: Proxima-Nova-Condensed;
+        src: url("./fonts/Proxima-Nova-Condensed.otf");
+      }
+      @font-face {
+        font-family: Proxima-Nova-Condensed-Semibold;
+        src: url("./fonts/Proxima-Nova-Condensed-Semibold.otf");
+      }
+      body {
+        font-family: Proxima-Nova;
+        font-size: 1.2rem;
+        color: black;
+      }
+      h1,
+      h2 {
+        font-family: Proxima-Nova-Condensed;
+        color: #4face6;
+      }
+      h2 {
+        font-family: Proxima-Nova-Condensed;
+        color: #489b57;
+        font-size: 2.5rem;
+      }
+      h3,
+      h4 {
+        font-family: Proxima-Nova-Condensed-Semibold;
+        color: #daf1de;
+      }
+      .nav-hover:hover {
+        background-color: #0c2d1c;
+      }
+      .register:hover {
+        color: white !important;
+      }
+      .img {
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+        width: 100%;
+      }
+      .caption-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .caption {
+        color: transparent;
+        color: black;
+        background-size: 0% 100%;
+        text-align: center;
+      }
+      .caption:hover {
+        background-position: center;
+        background-size: 100% 100%;
+        background-image: linear-gradient(#489b57, #489b57);
+        display: inline;
+        background-repeat: no-repeat;
+        transition: all 500ms ease-in-out;
+        color: white;
+      }
+      #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+      @media (min-width: 480px) {
+        .title {
+          font-size: 4rem;
+        }
+        .content {
+          height: 60vh;
+          overflow: auto;
+        }
+      }
+    </style>
+  </head>
+
+  <body style="background-color: #daf1de">
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #007a4c"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><h4 style="font-family:Proxima-Nova-Condensed">IDEATHON 2023</h4></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="nav-links collapse navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-md-2 register">
+              <a
+                class="nav-link nav-hover register"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://tinyurl.com/ideathon2022"
+                ><h4 style="color: #ffa400">REGISTER HERE!</h4></a
+              >
+            </li>
+            <li class="nav-item mx-md-2">
+              <a
+                class="nav-link nav-hover"
+                style="color: black"
+                href="schedule.html"
+                ><h4>SCHEDULE</h4></a
+              >
+            </li>
+            <li class="nav-item mx-md-2">
+              <a
+                class="nav-link nav-hover"
+                style="color: black"
+                href="judging.html"
+                ><h4>JUDGES & MENTORS</h4></a
+              >
+            </li>
+            <li class="nav-item mx-md-2">
+              <a
+                class="nav-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.uchicagotechteam.com/"
+                ><h4 style="color:#102045">TECHTEAM</h4></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- Header -->
+      <div class="row">
+        <div class="mx-auto">
+            <img src="./images/IdeathonLogoPNG.png" style="width:30rem" class="mt-4 mb-2 mx-auto d-block" ></img>
+          </div>    
+        <div class="caption-container">
+          <h3 class="caption">
+            APRIL 22–24, 2022.
+            <a
+              style="color: #235347"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://forms.gle/imvFVagaS8inJ9h86"
+              >JOIN US FOR A WEEKEND OF BRAINSTORMING BOLD SOLUTIONS TO BIG
+              PROBLEMS.</a
+            >
+          </h3>
+        </div>
+      </div>
+      <div class="row mt-3 gx-md-5 mb-4">
+        <div class="col-md-7 content">
+          <h2 class="text-center text-md-start">WHAT IS IT?</h2>
+          <p class="ms-2 ms-md-0">
+            Join us for 3 days (April 22–24) where you and your team can
+            identify and propose creative solutions to some of the major issues
+            in tech and policy. These solutions could take the form of a
+            government policy/tax/subsidy, app, program, educational
+            class—anything! Absolutely feel free to think outside the box!
+          </p>
+          <p class="ms-2 ms-md-0">
+            By 8PM on April 23rd, your team will submit a slideshow
+            presentation and a 3 minute recorded video of an elevator pitch for
+            the problem you are addressing and your solution. We will provide
+            detailed guidelines for what we are looking for in your slide deck.
+            Please submit all relevant links <a href=https://forms.gle/4haqR4JP1AKP5emr5>here.</a>
+          </p>
+          <h2 class="text-center text-md-start">WHO IS IT FOR?</h2>
+          <p class="ms-2 ms-md-0">
+            Anyone who attends the University of Chicago! We want to create an
+            open space for discussion and thoughtful collaboration across all
+            majors and schools.
+          </p>
+          <p class="ms-2 ms-md-0">
+            We are asking for teams of 5 students. At the time of registration,
+            you may register as a team or as an individual. During the Ideathon,
+            we will match individuals to form teams.
+          </p>
+          <h2 class="text-center text-md-start">WHERE IS IT?</h2>
+          <p class="ms-2 ms-md-0">
+            We have space booked in the Rubenstein Forum for speaker events and
+            work sessions during the weekend.
+          </p>
+          <h2 class="text-center text-md-start">TELL ME MORE!</h2>
+          <p class="ms-2 ms-md-0">
+            No technical or coding skills necessary! We encourage students with
+            a variety of skills, interests, and backgrounds to sign up. Before and during the event, 
+            please look through this <a href=https://docs.google.com/document/d/1Gvz0Sw6W6KG6c9MOKZGxG8h8AJYeiXU6/edit?usp=sharing&ouid=101348144060889512978&rtpof=true&sd=true>scoping document</a> to guide your brainstorming of policy and technical 
+            solutions to one of the two themes!
+          </p>
+        </div>
+        <!-- Map -->
+        <div class="col-md-4">
+          <div id="viewDiv"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
