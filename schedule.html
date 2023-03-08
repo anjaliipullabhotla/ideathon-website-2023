@@ -30,35 +30,36 @@
     <!-- Fonts -->
     <style>
       @font-face {
-        font-family: Bungee-Shade;
-        src: url("./fonts/Bungee-Shade.otf");
+        font-family: Proxima-Nova;
+        src: url("./fonts/Proxima-Nova-Font.otf");
       }
       @font-face {
-        font-family: Oswald;
-        src: url("./fonts/Oswald.ttf");
+        font-family: Proxima-Nova-Condensed;
+        src: url("./fonts/Proxima-Nova-Condensed.otf");
       }
       @font-face {
-        font-family: RobotoSerif;
-        src: url("./fonts/RobotoSerif.ttf");
+        font-family: Proxima-Nova-Condensed-Semibold;
+        src: url("./fonts/Proxima-Nova-Condensed-Semibold.otf");
       }
       body {
-        font-family: RobotoSerif;
+        font-family: Proxima-Nova;
         font-size: 1.2rem;
-        color: white;
+        color: black;
       }
       h1,
       h2 {
-        font-family: Bungee-Shade;
-        color: white;
+        font-family: Proxima-Nova-Condensed;
+        color:  #4face6;
       }
       h2 {
-        font-family: Bungee-Shade;
-        color: #4face6;
+        font-family: Proxima-Nova-Condensed;
+        color: #489b57;
         font-size: 2rem;
       }
       h3,
       h4 {
-        font-family: Oswald;
+        font-family:  Proxima-Nova-Condensed-Semibold;
+        color: #daf1de;
       }
       .nav-hover:hover {
         background-color: #0e7aa5;
@@ -171,7 +172,7 @@
           <button
             class="nav-link w-100 active"
             data-bs-toggle="tab"
-            data-bs-target="#day1"
+            data-bs-target="#kickoff"
             type="button"
             role="tab"
           >
@@ -182,7 +183,7 @@
           <button
             class="nav-link w-100"
             data-bs-toggle="tab"
-            data-bs-target="#day2"
+            data-bs-target="#weekend"
             type="button"
             role="tab"
           >
@@ -192,61 +193,30 @@
       </ul>
       <!-- Tab content -->
       <div class="tab-content content">
-        <!-- Day 1 -->
-        <div class="tab-pane fade show active" id="day1" role="tabpanel">
+        <!-- Kick Off -->
+        <div class="tab-pane fade show active" id="kickoff" role="tabpanel">
           <div class="container-fluid">
             <!-- First Event -->
             <div class="row my-4">
               <div class="col p-0">
                 <div class="border border-5 p-4 event">
                   <div class="mb-2" style="color: #26f478">
-                    <i class="fas fa-map-marker-alt me-2"></i>David Rubenstein
-                    Forum, 1201 E 60th St, Chicago IL 60637
-                    <i class="far fa-clock mx-2"></i>April 22, 12:30–2:00 PM
+                    <i class="fas fa-map-marker-alt me-2"></i> IOP Living Room, 
+                   5707 S. Woodlawn Avenue, Chicago IL 60637
+                    <i class="far fa-clock mx-2"></i> March 31st, 5:00 PM - 6:00 PM 
                   </div>
-                  <h2>Opening Keynote and Mentor Introduction Panel</h2>
+                  <h2>Kick Off Presentation</h2>
                   <p>
-                    Hear a keynote presentation on civic tech from Erin Simpson,
-                    TechTeam Founder and current Director for Technology Policy
-                    at the Center for American Progress. Learn more about her on
-                    the Center for American Progress'
-                    <a
-                      href="https://www.americanprogress.org/people/simpson-erin"
-                    >
-                      website</a
-                    >. We'll also be having a short mentor introduction panel
-                    over lunch where you can ask questions you might have about
-                    the event themes, misinformation sustainability, as well as
-                    careers in civic tech, etc.
+                    We'll be kicking off Ideathon 2023 by providing an overview of this year's three topics: 
+                    (1) Restorative Justice, (2) Smart City Initiatives, (3) the Urban-Rural Divide. We'll 
+                    be previewing the amazing people who have volunteered to be speakers, mentors, and judges for this year. 
+                    We'll also be providing tips on successful presentations, including winning submissions from previous years. 
+                    We'll also show how to sign up for office hours with Mayor Perkins and sign up for a technical workshop 
+                    lead by TechTeam members!
                   </p>
                 </div>
               </div>
             </div>
-            <!-- Second Event -->
-            <div class="row my-4">
-              <div class="col p-0">
-                <div class="border border-5 p-4 event">
-                  <div class="mb-2" style="color: #26f478">
-                    <i class="fas fa-map-marker-alt me-2"></i>David Rubenstein
-                    Forum, 1201 E 60th St, Chicago IL 60637
-                    <i class="far fa-clock mx-2"></i>April 22, 2:00–5:00 PM
-                  </div>
-                  <h2>Small Group Work Time and Mentor Office Hours</h2>
-                  <p>
-                    Groups of 3-5 can begin drafting their tech solution
-                    proposals to one of the two themes in designated work spaces
-                    in the Rubenstein forum. Participants will also be able to
-                    live screenprint Ideathon t-shirts and posters from 2-3 PM,
-                    courtesy of
-                    <a href="https://www.magnoliascreenprint.com">
-                      Magnolia Screen Printing</a
-                    >.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <!-- Day 2 -->
         <div class="tab-pane fade" id="day2" role="tabpanel">
           <div class="container-fluid">
