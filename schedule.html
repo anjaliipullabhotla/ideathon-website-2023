@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/jpg"
+      sizes="107x107"
+      href="images/TechTeamArrow.jpg"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/glitch.css" />
+
+    <title>Ideathon 2022</title>
+    <!-- Fonts -->
+    <style>
+      @font-face {
+        font-family: Bungee-Shade;
+        src: url("./fonts/Bungee-Shade.otf");
+      }
+      @font-face {
+        font-family: Oswald;
+        src: url("./fonts/Oswald.ttf");
+      }
+      @font-face {
+        font-family: RobotoSerif;
+        src: url("./fonts/RobotoSerif.ttf");
+      }
+      body {
+        font-family: RobotoSerif;
+        font-size: 1.2rem;
+        color: white;
+      }
+      h1,
+      h2 {
+        font-family: Bungee-Shade;
+        color: white;
+      }
+      h2 {
+        font-family: Bungee-Shade;
+        color: #4face6;
+        font-size: 2rem;
+      }
+      h3,
+      h4 {
+        font-family: Oswald;
+      }
+      .nav-hover:hover {
+        background-color: #0e7aa5;
+      }
+      .register:hover {
+        color: white !important;
+      }
+      .nav-tabs > .nav-item .active {
+        height: 100%;
+        background: #26f478;
+        color: red;
+      }
+      .nav-tabs > .nav-item {
+        background: white;
+        color: #0e7aa5;
+        width: 48%;
+      }
+      .border {
+        border-color: white !important;
+      }
+      .border:hover {
+        border-color: #26f478 !important;
+      }
+      @media (min-width: 480px) {
+        .title {
+          font-size: 4rem;
+        }
+        .content {
+          height: 60vh;
+          overflow: auto;
+        }
+        h2 {
+          font-size: 2.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body style="background-color: black">
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #26f478"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><h4>IDEATHON 2022</h4></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="nav-links collapse navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-md-2">
+              <a
+                class="nav-link nav-hover register"
+                style="color: red"
+                href="https://forms.gle/imvFVagaS8inJ9h86"
+                ><h4>REGISTER HERE</h4></a
+              >
+            </li>
+            <li class="nav-item mx-md-2">
+              <a
+                class="nav-link nav-hover"
+                style="color: black"
+                href="schedule.html"
+                ><h4>SCHEDULE</h4></a
+              >
+            </li>
+            <li class="nav-item mx-md-2">
+              <a
+                class="nav-link nav-hover"
+                style="color: black"
+                href="judging.html"
+                ><h4>JUDGES & MENTORS</h4></a
+              >
+            </li>
+            <li class="nav-item mx-md-2">
+              <a
+                class="nav-link"
+                style="color: #0e7aa5"
+                href="https://www.uchicagotechteam.com/"
+                ><h4>TECHTEAM</h4></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- Header -->
+      <div class="row">
+        <h1 class="text-center mt-3 title glitch" style="font-size: 3rem">
+          SCHEDULE
+        </h1>
+      </div>
+      <!-- Tabs -->
+      <ul class="nav nav-tabs mt-3 justify-content-between" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link w-100 active"
+            data-bs-toggle="tab"
+            data-bs-target="#day1"
+            type="button"
+            role="tab"
+          >
+            <h3>1st DAY: APRIL 22, 2022</h3>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link w-100"
+            data-bs-toggle="tab"
+            data-bs-target="#day2"
+            type="button"
+            role="tab"
+          >
+            <h3>2nd & 3rd DAYS: APRIL 23-24, 2022</h3>
+          </button>
+        </li>
+      </ul>
+      <!-- Tab content -->
+      <div class="tab-content content">
+        <!-- Day 1 -->
+        <div class="tab-pane fade show active" id="day1" role="tabpanel">
+          <div class="container-fluid">
+            <!-- First Event -->
+            <div class="row my-4">
+              <div class="col p-0">
+                <div class="border border-5 p-4 event">
+                  <div class="mb-2" style="color: #26f478">
+                    <i class="fas fa-map-marker-alt me-2"></i>David Rubenstein
+                    Forum, 1201 E 60th St, Chicago IL 60637
+                    <i class="far fa-clock mx-2"></i>April 22, 12:30–2:00 PM
+                  </div>
+                  <h2>Opening Keynote and Mentor Introduction Panel</h2>
+                  <p>
+                    Hear a keynote presentation on civic tech from Erin Simpson,
+                    TechTeam Founder and current Director for Technology Policy
+                    at the Center for American Progress. Learn more about her on
+                    the Center for American Progress'
+                    <a
+                      href="https://www.americanprogress.org/people/simpson-erin"
+                    >
+                      website</a
+                    >. We'll also be having a short mentor introduction panel
+                    over lunch where you can ask questions you might have about
+                    the event themes, misinformation sustainability, as well as
+                    careers in civic tech, etc.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Second Event -->
+            <div class="row my-4">
+              <div class="col p-0">
+                <div class="border border-5 p-4 event">
+                  <div class="mb-2" style="color: #26f478">
+                    <i class="fas fa-map-marker-alt me-2"></i>David Rubenstein
+                    Forum, 1201 E 60th St, Chicago IL 60637
+                    <i class="far fa-clock mx-2"></i>April 22, 2:00–5:00 PM
+                  </div>
+                  <h2>Small Group Work Time and Mentor Office Hours</h2>
+                  <p>
+                    Groups of 3-5 can begin drafting their tech solution
+                    proposals to one of the two themes in designated work spaces
+                    in the Rubenstein forum. Participants will also be able to
+                    live screenprint Ideathon t-shirts and posters from 2-3 PM,
+                    courtesy of
+                    <a href="https://www.magnoliascreenprint.com">
+                      Magnolia Screen Printing</a
+                    >.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Day 2 -->
+        <div class="tab-pane fade" id="day2" role="tabpanel">
+          <div class="container-fluid">
+            <!-- First Event -->
+            <div class="row my-4">
+              <div class="col p-0">
+                <div class="border border-5 p-4 event">
+                  <div class="mb-2" style="color: #26f478">
+                    <i class="fas fa-map-marker-alt me-2"></i>David Rubenstein
+                    Forum, 1201 E 60th St, Chicago IL 60637
+                    <i class="far fa-clock mx-2"></i>April 23, 1:00–2:00 PM
+                  </div>
+                  <h2>Fireside Chat with Alicia Rouault</h2>
+                  <p>
+                    Enjoy a fireside chat with Alicia Rouault, a Product Manager
+                    at the United States Digital Service. She has previously
+                    served as the Director of Product at 18F, a digital
+                    consultancy within the US government with the Technology
+                    Transformation Service at GSA. Learn more about her work on
+                    her personal
+                    <a href="http://www.aliciarouault.com/about">website.</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Second Event -->
+            <div class="row my-4">
+              <div class="col p-0">
+                <div class="border border-5 p-4 event">
+                  <div class="mb-2" style="color: #26f478">
+                    <i class="fas fa-map-marker-alt me-2"></i>David Rubenstein
+                    Forum, 1201 E 60th St, Chicago IL 60637
+                    <i class="far fa-clock mx-2"></i>April 23, 2:00–8:00 PM
+                  </div>
+                  <h2>Small group work time and mentor office hours</h2>
+                  <p>
+                    Continue working with your group on your tech proposals in
+                    the Rubenstein forum, with mentor office hours available to
+                    gain feedback on your proposals or ask questions about their
+                    work in civic tech, etc. Dinner will also be catered. Please
+                    remember to submit your proposals by 8 PM on Saturday, April
+                    23rd.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Third Event -->
+            <div class="row my-4">
+              <div class="col p-0">
+                <div class="border border-5 p-4 event">
+                  <div class="mb-2" style="color: #26f478">
+                    <i class="fas fa-map-marker-alt me-2"></i>5707 S Woodlawn
+                    Ave, Chicago, IL 60637
+                    <i class="far fa-clock mx-2"></i>April 23, 8:30PM–9:30 PM
+                  </div>
+                  <h2>Ice Cream Social in the IOP Living Room</h2>
+                  <p>
+                    Relax with your group and mingle with the other participants
+                    for a chill ice cream social.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Fourth Event -->
+            <div class="row my-4">
+              <div class="col p-0">
+                <div class="border border-5 p-4 event">
+                  <div class="mb-2" style="color: #26f478">
+                    <i class="fas fa-map-marker-alt me-2"></i>David Rubenstein
+                    Forum, 1201 E 60th St, Chicago IL 60637
+                    <i class="far fa-clock mx-2"></i>April 24, 11:00 AM–1:00 PM
+                  </div>
+                  <h2>April 24th: Closing Ceremony</h2>
+                  <p>
+                    Groups will get to present their proposals and winners will
+                    be annouced, with coffee and bagels catered.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
