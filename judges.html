@@ -29,7 +29,7 @@
       }
       @font-face {
         font-family: Proxima-Nova-Condensed;
-        src: url("./fonts/Oswald.ttf");
+        src: url("./fonts/Proxima-Nova-Condensed.otf");
       }
       @font-face {
         font-family: Proxima-Nova-Condensed-Semibold;
@@ -43,11 +43,11 @@
       h1,
       h2 {
         font-family: Proxima-Nova-Condensed;
-        color: #4face6;
+        color: #489b57;
       }
       h2 {
         font-family: Proxima-Nova-Condensed;
-        color: #4face6;
+        color: #489b57;
         font-size: 2.5rem;
       }
       h3,
@@ -61,32 +61,44 @@
       .register:hover {
         color: white !important;
       }
-      .border {
-        border-color: white !important;
-      }
-      .border:hover {
-        border-color: #26f478 !important;
-      }
-      em {
-        font-style: italic;
-      }
-      .font-weight-normal {
-        font-weight: 400 !important;
-      }
-      .scroll {
+      .img {
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 80px;
         width: 100%;
-        height: 80%;
-        overflow: auto;
+      }
+      .caption-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .caption {
+        color: transparent;
+        color: black;
+        background-size: 0% 100%;
+        text-align: center;
+      }
+      .caption:hover {
+        background-position: center;
+        background-size: 100% 100%;
+        background-image: linear-gradient(#489b57, #489b57);
+        display: inline;
+        background-repeat: no-repeat;
+        transition: all 500ms ease-in-out;
+        color: white;
+      }
+      #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
       }
       @media (min-width: 480px) {
         .title {
           font-size: 4rem;
         }
         .content {
-          height: 60vh;
-          overflow: auto;
-        }
-        .scroll {
           height: 60vh;
           overflow: auto;
         }
@@ -101,7 +113,7 @@
       style="background-color: #007a4c"
     >
       <div class="container">
-        <a class="navbar-brand" href="index.html"><h4>IDEATHON 2023</h4></a>
+        <a class="navbar-brand" href="index.html"><h4 style="font-family:Proxima-Nova-Condensed">IDEATHON 2023</h4></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -118,12 +130,13 @@
           id="navbarSupportedContent"
         >
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item mx-md-2">
+            <li class="nav-item mx-md-2 register">
               <a
                 class="nav-link nav-hover register"
-                style="color: #ffa400"
-                href="https://forms.gle/TxRUsjRfLJTQFVnn9"
-                ><h4>REGISTER HERE</h4></a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://forms.gle/G3tWV4jrZm44pTCe9"
+                ><h4 style="color: #ffa400">REGISTER HERE!</h4></a
               >
             </li>
             <li class="nav-item mx-md-2">
@@ -145,9 +158,10 @@
             <li class="nav-item mx-md-2">
               <a
                 class="nav-link"
-                style="color: #0e7aa5"
+                target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.uchicagotechteam.com/"
-                ><h4>TECHTEAM</h4></a
+                ><h4 style="color:#102045">TECHTEAM</h4></a
               >
             </li>
           </ul>
@@ -167,7 +181,7 @@
             <img src="./images/judges/KeithHanson.jpg" alt="Keith Hanson" class="img-fluid border-white border-w-5 w-50 w-md-80 w-lg-60 rounded-circle">
           </div>
           <div class="col-md-8 order-md-2" style="padding-bottom: 2vw">
-            <h3 class="text-uppercase font-weight-bold" style="color:#0e7aa5">
+            <h3 class="text-uppercase font-weight-bold" style="color:#007a4c">
               Keith Hanson
             </h3>
             <h5 class="my-0 font-weight-normal">
@@ -185,7 +199,7 @@
             <img src="./images/ClayWalker.jpg" alt="Clay Walker" class="img-fluid border-white border-w-5 w-50 w-md-80 w-lg-60 rounded-circle">
           </div>  
           <div class="col-md-8 order-md-2" style="padding-bottom: 2vw">
-            <h3 class="text-uppercase font-weight-bold" style="color:#0e7aa5">
+            <h3 class="text-uppercase font-weight-bold" style="color:#007a4c">
               Clay Walker
             </h3>
             <h5 class="my-0 font-weight-normal">
@@ -203,7 +217,7 @@
             <img src="./images/Adrian-Perkins-Headshot-v2.png" alt="Adrian Perkins" class="img-fluid border-white border-w-5 w-50 w-md-80 w-lg-60 rounded-circle">
           </div>  
           <div class="col-md-8 order-md-2" style="padding-bottom: 2vw">
-            <h3 class="text-uppercase font-weight-bold" style="color:#0e7aa5">
+            <h3 class="text-uppercase font-weight-bold" style="color:#007a4c">
               Adrian Perkins
             </h3>
             <h5 class="my-0 font-weight-normal">
@@ -221,7 +235,7 @@
             <img src="./images/JuliaOran.jpeg" alt="Julia Oran" class="img-fluid border-white border-w-5 w-50 w-md-80 w-lg-60 rounded-circle">
           </div>  
           <div class="col-md-8 order-md-2" style="padding-bottom: 2vw">
-            <h3 class="text-uppercase font-weight-bold" style="color:#0e7aa5">
+            <h3 class="text-uppercase font-weight-bold" style="color:#007a4c">
               Julia Oran
             </h3>
             <h5 class="my-0 font-weight-normal">
@@ -238,7 +252,7 @@
             <img src="./images/MarkSchauerte.png" alt="Mark Schauerte" class="img-fluid border-white border-w-5 w-50 w-md-80 w-lg-60 rounded-circle">
           </div>
           <div class="col-md-8 order-md-2" style="padding-bottom: 2vw">
-            <h3 class="text-uppercase text-letter-spacing-xs mt-0 mb-1 font-weight-bold" style="color:#0e7aa5">
+            <h3 class="text-uppercase text-letter-spacing-xs mt-0 mb-1 font-weight-bold" style="color:#007a4c">
               Mark Schauerte 
             </h3>
             <h5 class="my-0 font-weight-normal">
